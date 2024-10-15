@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
-import postcss from 'rollup-plugin-postcss';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,15 +11,11 @@ export default defineConfig({
       name: 'Vue3Skeleton',
       fileName: 'v3-skeleton',
     },
+    cssCodeSplit: false,
     rollupOptions: {
-      plugins: [
-        postcss({
-          inject: true,
-          extract: false,
-        }),
-      ],
       external: ['vue'],
       output: {
+        assetFileNames: 'assets/[name].[hash].[ext]',
         globals: {
           vue: 'Vue',
         },
