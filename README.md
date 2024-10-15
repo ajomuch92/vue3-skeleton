@@ -8,13 +8,13 @@
 First, install the package using npm or yarn:
 
 ```bash
-npm install vue3-skeleton
+npm install @ajomuch92/vue3-skeleton
 ```
 
 or
 
 ```bash
-yarn add vue3-skeleton
+yarn add @ajomuch92/vue3-skeleton
 ```
 
 ## Basic Usage
