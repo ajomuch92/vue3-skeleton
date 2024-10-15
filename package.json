@@ -1,5 +1,5 @@
 {
-  "name": "@ajomuch92/vue3-skeleton",
+  "name": "v3-skeleton",
   "private": false,
   "version": "0.0.1",
   "type": "module",
@@ -14,12 +14,12 @@
   "repository": {
     "url": "https://github.com/ajomuch92/vue3-skeleton"
   },
-  "main": "./dist/vue3-skeleton.umd.cjs",
-  "module": "./dist/vue3-skeleton.js",
+  "main": "./dist/v3-skeleton.umd.cjs",
+  "module": "./dist/v3-skeleton.js",
   "exports": {
     ".": {
-      "import": "./dist/vue3-skeleton.js",
-      "require": "./dist/vue3-skeleton.umd.cjs"
+      "import": "./dist/v3-skeleton.js",
+      "require": "./dist/v3-skeleton.umd.cjs"
     }
   },
   "scripts": {

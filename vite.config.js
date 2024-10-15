@@ -9,7 +9,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.js'),
       name: 'Vue3Skeleton',
-      fileName: 'vue3-skeleton',
+      fileName: 'v3-skeleton',
     },
     rollupOptions: {
       external: ['vue'],
