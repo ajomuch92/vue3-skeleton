@@ -11,6 +11,9 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/ajomuch92/vue3-skeleton"
+  },
   "main": "./dist/vue3-skeleton.umd.cjs",
   "module": "./dist/vue3-skeleton.js",
   "exports": {
