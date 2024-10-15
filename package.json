@@ -1,7 +1,7 @@
 {
   "name": "v3-skeleton",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "author": {
     "name": "Aarón Montes"
@@ -20,6 +20,10 @@
     ".": {
       "import": "./dist/v3-skeleton.js",
       "require": "./dist/v3-skeleton.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "scripts": {
