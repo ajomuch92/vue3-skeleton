@@ -1,5 +1,5 @@
 
-# Vue3Skeleton
+# Vue3 Skeleton
 
 `Vue3Skeleton` is a Vue 3 component designed to display a skeleton loading animation while content is being loaded. You can use it to improve the user experience while the main content or data is still loading.
 
@@ -8,13 +8,13 @@
 First, install the package using npm or yarn:
 
 ```bash
-npm install @ajomuch92/vue3-skeleton
+npm install v3-skeleton
 ```
 
 or
 
 ```bash
-yarn add @ajomuch92/vue3-skeleton
+yarn add v3-skeleton
 ```
 
 ## Basic Usage
@@ -32,7 +32,7 @@ Here’s an example of how to use the `Vue3Skeleton` component in your project:
 </template>
 
 <script setup>
-import Vue3Skeleton from 'vue3-skeleton';
+import Vue3Skeleton from 'v3-skeleton';
 </script>
 ```
 
