@@ -1,7 +1,7 @@
 {
   "name": "v3-skeleton",
   "private": false,
-  "version": "0.0.6",
+  "version": "1.0.0",
   "type": "module",
   "author": {
     "name": "Aarón Montes"
@@ -41,5 +41,6 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "vite": "^5.4.8",
     "vite-plugin-lib-inject-css": "^2.1.1"
-  }
+  },
+  "keywords": ["Vue", "Vue 3", "skeleton", "loader", "shimmer"]
 }

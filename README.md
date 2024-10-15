@@ -36,6 +36,8 @@ import Vue3Skeleton from 'v3-skeleton';
 </script>
 ```
 
+See the a [example](https://github.com/ajomuch92/vue3-skeleton/tree/main/example) project here.
+
 ### Props
 
 | Prop              | Type    | Default Value      | Description                                                                 |
