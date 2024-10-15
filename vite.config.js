@@ -14,7 +14,6 @@ export default defineConfig({
     cssCodeSplit: true,
     rollupOptions: {
       external: ['vue'],
-      preserveModules: false,
       output: {
         globals: {
           vue: 'Vue',
