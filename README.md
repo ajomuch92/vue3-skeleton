@@ -32,21 +32,8 @@ Here’s an example of how to use the `Vue3Skeleton` component in your project:
 </template>
 
 <script setup>
-import { Vue3Skeleton } from 'vue3-skeleton';
-</script>
-```
-
-## Global Installation
-
-You can install the `Vue3Skeleton` component globally in your Vue application. Here's how to do it:
-
-```javascript
-import { createApp } from 'vue';
 import Vue3Skeleton from 'vue3-skeleton';
-
-const app = createApp(App);
-app.use(Vue3Skeleton);
-app.mount('#app');
+</script>
 ```
 
 ### Props
