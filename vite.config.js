@@ -11,11 +11,11 @@ export default defineConfig({
       name: 'Vue3Skeleton',
       fileName: 'v3-skeleton',
     },
-    cssCodeSplit: false,
+    cssCodeSplit: true,
     rollupOptions: {
       external: ['vue'],
+      preserveModules: false,
       output: {
-        assetFileNames: 'assets/[name].[hash].[ext]',
         globals: {
           vue: 'Vue',
         },
