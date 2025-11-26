@@ -11,6 +11,7 @@
     "dist",
     "src"
   ],
+  "types": "dist/index.d.ts",
   "repository": {
     "url": "https://github.com/ajomuch92/vue3-skeleton"
   },
@@ -31,7 +32,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build  && npm run build:types",
     "preview": "vite preview",
     "type-check": "vue-tsc --noEmit",
     "build:types": "vue-tsc --declaration --emitDeclarationOnly --outDir dist"
