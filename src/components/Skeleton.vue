@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { defineComponent, computed } from 'vue';
+import { computed } from 'vue';
 
-defineComponent({
+defineOptions({
   name: 'Vue3Skeleton',
 })
 
