@@ -4,62 +4,49 @@
   </Component>
 </template>
 
-<script setup>
-import { defineComponent, computed } from 'vue';
+<script setup lang="ts">
+import { computed } from 'vue';
 
-defineComponent({
+defineOptions({
   name: 'Vue3Skeleton',
 })
 
-const props = defineProps({
-  as: {
-    type: String,
-    default: 'div'
-  },
-  loading: {
-    type: Boolean,
-    default: false,
-  },
-  width: {
-    type: String,
-    default: '100%',
-  },
-  height: {
-    type: String,
-    default: '20px',
-  },
-  borderRadius: {
-    type: String,
-    default: '4px',
-  },
-  backgroundColor: {
-    type: String,
-    default: '#e0e0e0'
-  },
-  toColor: {
-    type: String,
-    default: '#f0f0f0'
-  },
-  interval: {
-    type: String,
-    default: '3s'
-  },
-});
+interface Props {
+  as?: string;
+  loading?: boolean;
+  width?: string;
+  height?: string;
+  borderRadius?: string;
+  backgroundColor?: string;
+  toColor?: string;
+  interval?: string;
+}
+
+const {
+  as = 'div',
+  loading,
+  width = '100%',
+  height = '20px',
+  borderRadius = '4px',
+  backgroundColor = '#e0e0e0',
+  toColor = '#f0f0f0',
+  interval = '3s'
+} = defineProps<Props>();
 
 
 // Computed properties for each style
-const width = computed(() => props.width);
+const widthComputed = computed(() => width);
 
-const height = computed(() => props.height);
+const heightComputed = computed(() => height);
 
-const borderRadius = computed(() => props.borderRadius);
+const borderRadiusComputed = computed(() => borderRadius);
 
-const interval = computed(() => props.interval)
+const intervalComputed = computed(() => interval);
 
-const backgroundColor = computed(() => props.backgroundColor);
+const backgroundColorComputed = computed(() => backgroundColor);
 
 const backgroundImage = computed(() => 
-  `linear-gradient(90deg, ${props.backgroundColor} 25%, ${props.toColor} 50%, ${props.backgroundColor} 75%)`
+  `linear-gradient(90deg, ${backgroundColorComputed.value} 25%, ${toColor} 50%, ${backgroundColorComputed.value} 75%)`
 );
 
 
@@ -67,14 +54,14 @@ const backgroundImage = computed(() =>
 
 <style scoped>
 .skeleton {
-  height: v-bind(height);
-  width: v-bind(width);
-  background-color: v-bind(backgroundColor);
-  border-radius: v-bind(borderRadius);
-  
+  height: v-bind(heightComputed);
+  width: v-bind(widthComputed);
+  background-color: v-bind(backgroundColorComputed);
+  border-radius: v-bind(borderRadiusComputed);
+
   background-image: v-bind(backgroundImage);
   background-size: 200% 100%;
-  animation: skeleton-loading v-bind(interval) infinite ease-in-out;
+  animation: skeleton-loading v-bind(intervalComputed) infinite ease-in-out;
 }
 
 /* Animación del skeleton */
