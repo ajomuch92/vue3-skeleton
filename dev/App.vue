@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import Skeleton from './components/Skeleton.vue';
+import Skeleton from '../src/components/Skeleton.vue';
 
 const loading = ref(false);
 
