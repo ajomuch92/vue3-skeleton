@@ -3,6 +3,9 @@
 
 `Vue3Skeleton` is a Vue 3 component designed to display a skeleton loading animation while content is being loaded. You can use it to improve the user experience while the main content or data is still loading.
 
+### Note
+This package is intended for Vue 3 projects only, and was migrated to TypeScript for better type safety and developer experience.
+
 ## Installation
 
 First, install the package using npm or yarn:
