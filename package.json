@@ -1,7 +1,7 @@
 {
   "name": "v3-skeleton",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "author": {
     "name": "Aarón Montes"
@@ -11,7 +11,6 @@
     "dist",
     "src"
   ],
-  "types": "dist/index.d.ts",
   "repository": {
     "url": "https://github.com/ajomuch92/vue3-skeleton"
   },
@@ -20,7 +19,8 @@
   "exports": {
     ".": {
       "import": "./dist/v3-skeleton.js",
-      "require": "./dist/v3-skeleton.umd.cjs"
+      "require": "./dist/v3-skeleton.umd.cjs",
+      "types": "./dist/index.d.ts"
     },
     "./dist/index.css": {
       "import": "./dist/index.css",
