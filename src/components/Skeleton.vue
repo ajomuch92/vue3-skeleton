@@ -11,6 +11,17 @@ defineComponent({
   name: 'Vue3Skeleton',
 })
 
+interface Props {
+  as?: string;
+  loading?: boolean;
+  width?: string;
+  height?: string;
+  borderRadius?: string;
+  backgroundColor?: string;
+  toColor?: string;
+  interval?: string;
+}
+
 const {
   as = 'div',
   loading,
@@ -20,16 +31,7 @@ const {
   backgroundColor = '#e0e0e0',
   toColor = '#f0f0f0',
   interval = '3s'
-} = defineProps<{
-  as: string;
-  loading: boolean;
-  width: string;
-  height: string;
-  borderRadius: string;
-  backgroundColor: string;
-  toColor: string;
-  interval: string;
-}>();
+} = defineProps<Props>();
 
 
 // Computed properties for each style
